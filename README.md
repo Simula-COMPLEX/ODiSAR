@@ -9,9 +9,9 @@ This framework integrates forecasting, uncertainty estimation, and feature-wise 
 
 - **Digital Twin Model (DTM)**: A Transformer that predicts and reconstructs future system states.  
 - **Digital Twin Capability (DTC)**: Computes reconstruction error and MC-dropout-based forecast uncertainty.  
-- **Explainable OOD Detector**: Flags OOD states using both anomaly scores and uncertainty, while attributing the cause to individual state features.
+- **Explainable OOD Detector**: Flags OOD events based on reconstruction error and forecast uncertainty, while attributing the cause to individual state features.
 
-This capability aligns with the **Monitor** and **Analyze** phases of the **MAPLE-K feedback loop**, enabling not only detection but also explanation of anomalies. It lays the foundation for future integration with **planning and adaptation mechanisms** for self-adaptive systems.
+This capability aligns with the **Monitor** and **Analyze** phases of the **MAPLE-K feedback loop**, enabling not only detection but also explanation of potential anomalies. It lays the foundation for future integration with **planning and adaptation mechanisms** for self-adaptive systems.
 
 > ⚠️ *This is an initial version of the tool, and further enhancements—especially for explainability—are planned in future work.*
 
@@ -112,6 +112,5 @@ This performs:
 - Ensure that your **input and output features are defined clearly** and the combined feature set used for normalization does **not contain duplicates**.
 - Inference will reuse the training-time normalization statistics.
 - The script supports datasets with different feature combinations (e.g., Ship dynamics, Mobile robot navigation).
-- This is an initial version of the approach/tool. Further implementation and optimization will be made available soon.
 
 ---
