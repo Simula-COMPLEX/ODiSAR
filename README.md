@@ -28,7 +28,7 @@ This capability aligns with the **Monitor** and **Analyze** phases of the **MAPL
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/ErblinIsaku/dt-ood-detection.git
+git clone https://github.com/Simula-COMPLEX/dt-ood-detection.git
 cd dt-ood-detection
 ```
 
