@@ -1,0 +1,39 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# VS Code settings
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest cache
+.pytest_cache/
+
+# Logs and local data
+*.log
+*.csv
+*.xlsx
+*.db
+*.npz
+*.npy
+
+# Mac system files
+.DS_Store
+
+# Model weights or outputs
+*.pth
+*.pt
+
+# Other
+*.swp
