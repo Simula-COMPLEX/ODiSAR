@@ -1,7 +1,19 @@
-
 # Digital Twin-Based Out-Of-Distribution Detection
 
 This repository implements a Transformer-based approach for proactive **out-of-distribution (OOD)** detection using **forecasting and reconstruction error analysis**. It is structured around a two-phase training process and supports confidence-aware inference and explainability.
+
+---
+
+🧩 **Conceptual Overview & Motivation**  
+This framework integrates forecasting, uncertainty estimation, and feature-wise reconstruction analysis into a unified Digital Twin-based OOD detection pipeline:
+
+- **Digital Twin Model (DTM)**: A Transformer that predicts and reconstructs future system states.  
+- **Digital Twin Capability (DTC)**: Computes reconstruction error and MC-dropout-based forecast uncertainty.  
+- **Explainable OOD Detector**: Flags OOD states using both anomaly scores and uncertainty, while attributing the cause to individual state features.
+
+This capability aligns with the **Monitor** and **Analyze** phases of the **MAPLE-K feedback loop**, enabling not only detection but also explanation of anomalies. It lays the foundation for future integration with **planning and adaptation mechanisms** for self-adaptive systems.
+
+> ⚠️ *This is an initial version of the tool, and further enhancements—especially for explainability—are planned in future work.*
 
 ---
 
