@@ -4,7 +4,7 @@ This repository implements a Transformer-based approach for proactive **out-of-d
 
 ---
 
-🧩 **Conceptual Overview & Motivation**  
+**Conceptual Overview & Motivation**  
 This framework integrates forecasting, uncertainty estimation, and feature-wise reconstruction analysis into a unified Digital Twin-based OOD detection pipeline:
 
 - **Digital Twin Model (DTM)**: A Transformer that predicts and reconstructs future system states.  
@@ -23,7 +23,7 @@ This capability aligns with the **Monitor** and **Analyze** phases of the **MAPL
 
 ---
 
-## 🚀 Setup
+## Setup
 
 1. **Clone the Repository**
 
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 This project provides two use cases:
 
@@ -61,7 +61,7 @@ Also, update `config/config_inference.py` to set:
 
 ---
 
-## 🧠 Model Training
+## Model Training
 
 ```bash
 python main_train.py
@@ -80,7 +80,7 @@ This performs:
 
 ---
 
-## 🔍 Inference & OOD Detection
+## Inference & OOD Detection
 
 ```bash
 python main_inference.py
@@ -94,7 +94,7 @@ This performs:
 
 ---
 
-## 📊 Outputs
+## Outputs
 
 - `forecast_results.csv`: Ground truth vs forecasted values
 - `forecast_errors.csv`: MSE/RMSE per feature
@@ -107,7 +107,7 @@ This performs:
 
 ---
 
-## 📘 Notes
+## Notes
 
 - Ensure that your **input and output features are defined clearly** and the combined feature set used for normalization does **not contain duplicates**.
 - Inference will reuse the training-time normalization statistics.
