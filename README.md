@@ -1,7 +1,13 @@
 
-# Digital Twin OOD Detection with Transformer
+# Digital Twin-Based Out-Of-Distribution Detection
 
 This repository implements a Transformer-based approach for proactive **out-of-distribution (OOD)** detection using **forecasting and reconstruction error analysis**. It is structured around a two-phase training process and supports confidence-aware inference and explainability.
+
+---
+
+![DT Overview](assets/ex-dt-overview.png)
+
+> **Overview**: A Transformer-based Digital Twin (DTM) predicts future system states. The Digital Twin Capability (DTC) layer reconstructs forecasts and quantifies uncertainty. An explainable OOD Detector flags abnormal system behaviors based on reconstruction error, forecast variance, and feature contributions.
 
 ---
 
@@ -24,12 +30,22 @@ pip install -r requirements.txt
 
 ## ⚙️ Configuration
 
-- Modify `config/config_train.py` to set:
-  - `INPUT_FEATURES`, `OUTPUT_FEATURES`
-  - `DATA_PATHS`, `SEQUENCE_SETTINGS`, `TRAINING_PARAMS`
+This project provides two use cases:
 
-- Modify `config/config_inference.py` to set:
-  - `TEST_DATA_DIR`, `MODEL_PATH`, `SCALER_PATH`, etc.
+### 1. **Ship Motion Prediction** (NTNU dataset)
+- Config file: `config/config_train.py`
+
+### 2. **Trajectory Prediction using Mobile Robots** (PAL Robotics dataset)
+- Config file: `config/mrobot_config_train.py`
+
+> Datasets for both cases will be made available soon.
+
+Modify the config files to set:
+- `INPUT_FEATURES`, `OUTPUT_FEATURES`
+- `DATA_PATHS`, `SEQUENCE_SETTINGS`, `TRAINING_PARAMS`
+
+Also, update `config/config_inference.py` to set:
+- `TEST_DATA_DIR`, `MODEL_PATH`, `SCALER_PATH`, etc.
 
 ---
 
@@ -84,5 +100,6 @@ This performs:
 - Ensure that your **input and output features are defined clearly** and the combined feature set used for normalization does **not contain duplicates**.
 - Inference will reuse the training-time normalization statistics.
 - The script supports datasets with different feature combinations (e.g., Ship dynamics, Mobile robot navigation).
+- This is an initial version of the approach/tool. Further implementation and optimization will be made available soon.
 
 ---

@@ -4,7 +4,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
-from config.pal_config_train import (
+from config.mrobot_config_train import (
     BASE_DIR, EXPERIMENT_NAME,
     INPUT_FEATURES, OUTPUT_FEATURES,
     DATA_PATHS, SEQUENCE_SETTINGS, MODEL_PARAMS,
