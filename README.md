@@ -42,12 +42,12 @@ pip install -r requirements.txt
 
 ## Configuration
 
-This project provides two use cases:
+This project currently provides two use cases:
 
-### 1. **Ship Motion Prediction** (NTNU dataset)
+### 1. **Ship Motion Prediction** (i.e., NTNU)
 - Config file: `config/config_train.py`
 
-### 2. **Trajectory Prediction using Mobile Robots** (PAL Robotics dataset)
+### 2. **Trajectory Prediction using Mobile Robots** (i.e., PAL Robotics)
 - Config file: `config/mrobot_config_train.py`
 
 > Datasets for both cases will be made available soon.
