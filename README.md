@@ -67,10 +67,10 @@ Also, update `config/config_inference.py` to set:
 python main_train.py
 ```
 
-Or for PAL-specific config:
+Or for mobile robot navigation config:
 
 ```bash
-python pal_main_train.py
+python mrobot_main_train.py
 ```
 
 This performs:
