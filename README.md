@@ -17,16 +17,7 @@ This capability aligns with the **Monitor** and **Analyze** phases of the **MAPL
 
 ---
 
-<!-- ![DT Overview](assets/final-overview-diagram.png) -->
-
-<p align="center">
-  <a href="assets/final-overview-diagram.pdf" target="_blank">
-    <img src="https://github.com/Simula-COMPLEX/dt-ood-detection/blob/main/assets/final-overview-diagram.pdf" 
-         alt="DT Overview"
-         style="max-width: 100%; height: auto;" />
-  </a>
-</p>
-
+![DT Overview](assets/final-overview-diagram.png)
 
 > **Overview**: The Transformer-based Digital Twin Model (DTM) takes historical input and produces both forecasted and reconstructed future system states. The Digital Twin Capability (DTC) analyzes these outputs using reconstruction error and uncertainty (via MC Dropout) to detect potential OOD instances. The Explainable OOD Detector combines this analysis to flag OOD states and attributes them to the most contributing system features.
 
