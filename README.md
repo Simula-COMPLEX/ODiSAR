@@ -13,7 +13,7 @@ This approach integrates forecasting, uncertainty estimation, and feature-wise r
 
 This capability aligns with the **Monitor** and **Analyze** phases of the **MAPLE-K feedback loop**, enabling not only detection but also explanation of potential anomalies. It lays the foundation for future integration with **planning and adaptation mechanisms** for self-adaptive systems.
 
-> ⚠️ *This is an initial version of the tool, and further enhancements—especially for explainability—are planned in future work.*
+<!-- > ⚠️ *This is an initial version of the tool, and further enhancements—especially for explainability—are planned in future work.* -->
 
 ---
 
