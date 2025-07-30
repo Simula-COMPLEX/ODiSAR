@@ -31,15 +31,15 @@ MODEL_PARAMS = {
     'd_model': 64,
     'num_heads': 4,
     'ff_dim': 128,
-    'dropout_rate': 0.1
+    'dropout_rate': 0.2
 }
 
 # === Training Parameters ===
 TRAINING_PARAMS = {
     'batch_size': 64,
-    'learning_rate': 0.00092,
-    'epochs_phase1': 100,
-    'epochs_phase2': 200,
+    'learning_rate': 0.0001,
+    'epochs_phase1': 200,
+    'epochs_phase2': 100,
     'early_stopping': {
         'enabled': False,
         'patience': 10,

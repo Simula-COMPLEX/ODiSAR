@@ -1,11 +1,11 @@
 # Digital Twin-Based Out-Of-Distribution Detection
 
-This repository implements a Transformer-based approach for proactive **out-of-distribution (OOD)** detection using **forecasting and reconstruction error analysis**. It is structured around a two-phase training process and supports confidence-aware inference and explainability.
+This repository implements a **Transformer‑based digital twin** approach for **proactive out‑of‑distribution (OOD) detection** in self‑adaptive robots (SARs), with built‑in interpretability.
 
 ---
 
 **Conceptual Overview & Motivation**  
-This framework integrates forecasting, uncertainty estimation, and feature-wise reconstruction analysis into a unified Digital Twin-based OOD detection pipeline:
+This approach integrates forecasting, uncertainty estimation, and feature-wise reconstruction analysis into a unified Digital Twin-based OOD detection pipeline:
 
 - **Digital Twin Model (DTM)**: A Transformer that predicts and reconstructs future system states.  
 - **Digital Twin Capability (DTC)**: Computes reconstruction error and MC-dropout-based forecast uncertainty.  
@@ -17,9 +17,9 @@ This capability aligns with the **Monitor** and **Analyze** phases of the **MAPL
 
 ---
 
-![DT Overview](assets/ex-dt-overview.png)
+![DT Overview](assets/final-overview-diagram.png)
 
-> **Overview**: A Transformer-based Digital Twin (DTM) predicts future system states. The Digital Twin Capability (DTC) layer reconstructs forecasts and quantifies uncertainty. An explainable OOD Detector flags abnormal system behaviors based on reconstruction error, forecast variance, and feature contributions.
+> **Overview**: The Transformer-based Digital Twin Model (DTM) takes historical input and produces both forecasted and reconstructed future system states. The Digital Twin Capability (DTC) analyzes these outputs using reconstruction error and uncertainty (via MC Dropout) to detect potential OOD instances. The Explainable OOD Detector combines this analysis to flag OOD states and attributes them to the most contributing system features.
 
 ---
 
@@ -48,7 +48,7 @@ This project currently provides two use cases:
 - Config file: `config/config_train.py`
 
 ### 2. **Trajectory Prediction using Mobile Robots** (i.e., PAL Robotics)
-- Config file: `config/mrobot_config_train.py`
+- Config file: `config/pal_config_train.py`
 
 > Datasets for both cases will be made available soon.
 
@@ -70,12 +70,12 @@ python main_train.py
 Or for mobile robot navigation config:
 
 ```bash
-python mrobot_main_train.py
+python pal_main_train.py
 ```
 
 This performs:
 - **Phase 1**: Joint training for forecasting and reconstruction
-- **Phase 2**: Fine-tuning the reconstruction head only
+- **Phase 2** (optional): Fine-tuning the reconstruction head only 
 - Computes and saves reconstruction and uncertainty thresholds
 
 ---
@@ -84,6 +84,12 @@ This performs:
 
 ```bash
 python main_inference.py
+```
+
+Or for mobile robot navigation config:
+
+```bash
+python pal_main_inference.py
 ```
 
 This performs:

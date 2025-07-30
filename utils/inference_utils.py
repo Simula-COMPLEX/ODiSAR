@@ -86,7 +86,7 @@ def compute_forecast_recon_errors(model, loader, device, output_feature_names):
 
 
 # === Forecast Variance with MC Dropout ===
-def compute_forecast_variance(model, loader, device, n_passes=10):
+def compute_forecast_variance(model, loader, device, n_passes=20):
     model.train()
     variances = []
     for x, y in tqdm(loader):
