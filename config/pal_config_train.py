@@ -36,7 +36,7 @@ MODEL_PARAMS = {
 
 # === Training Parameters ===
 TRAINING_PARAMS = {
-    'batch_size': 64,
+    'batch_size': 16,
     'learning_rate': 0.0001,
     'epochs_phase1': 200,
     'epochs_phase2': 100,
