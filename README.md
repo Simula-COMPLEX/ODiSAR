@@ -1,4 +1,4 @@
-# Digital Twin-Based Out-Of-Distribution Detection
+# Out of Distribution Detection in Self-adaptive Robots with AI-powered Digital Twins
 
 This repository implements a **Transformer‑based digital twin** approach for **proactive out‑of‑distribution (OOD) detection** in self‑adaptive robots (SARs), with built‑in interpretability.
 
@@ -28,8 +28,8 @@ This capability aligns with the **Monitor** and **Analyze** phases of the **MAPL
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/Simula-COMPLEX/dt-ood-detection.git
-cd dt-ood-detection
+git clone https://github.com/Simula-COMPLEX/ODiSAR.git
+cd ODiSAR
 ```
 
 2. **Install Dependencies**
